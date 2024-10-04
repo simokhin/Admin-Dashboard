@@ -179,5 +179,57 @@ main {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     background-color: var(--grey);
+    padding: clamp(1rem, 2vw, 1.5rem);
+    display: flex;
+    gap: 1.5rem;
 }
 
+.left-side {
+    flex: 3;
+}
+
+.left-side h2 {
+    margin-bottom: 1rem;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1.5rem;
+}
+
+/* @media (max-width: 768px){
+    .projects {
+        grid-template-columns: 1fr;
+    }
+} */
+
+.project {
+    background-color: #FFFFFF;
+    border-left: 0.5rem solid #EFB329;
+    padding: clamp(1rem, 5vw, 2rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 15px;
+
+}
+
+.icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 1rem;
+}
+
+.icons svg {
+    width: 1.5rem;
+}
+
+.right-side {
+    flex: 1;
+}
+
+.right-side h2 {
+    margin-bottom: 1rem;
+}
