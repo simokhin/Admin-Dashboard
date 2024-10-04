@@ -17,7 +17,7 @@ body {
     font-family: "Roboto", system-ui;
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: 1fr 6fr;
 }
 
 .sidebar {
@@ -76,14 +76,14 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: clamp(1rem, 2vw ,1.5rem) clamp(1rem, 2vw ,1.5rem);
+    padding: clamp(0.7rem, 2vw, 1rem) clamp(1.5rem, 2vw, 2rem);
 }
 
 .search {
     width: 70%;
     min-width: 100px;
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 .search svg {
@@ -102,7 +102,77 @@ header {
 }
 
 .profile-panel {
-    display: flex;    
+    display: flex;
+    gap: 1rem;  
+    align-items: center;
+    justify-content: flex-end;  
+}
+
+.profile-panel svg {
+    width: 1.5rem;
+}
+
+.profile-panel img {
+    width: clamp(2rem, 5vw,3rem);
+}
+
+.profile-name {
+    font-size: clamp(1rem, 4vw ,1.2rem);
+    font-weight: bold;
+}
+
+.profile-name a {
+    text-decoration: none;
+    color: #111111;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+.header-second-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: clamp(0.7rem, 2vw, 1rem) clamp(1.5rem, 2vw, 2rem);
+
+}
+
+.profile {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.profile img {
+    width: 5rem;
+}
+
+.hello {
+    font-weight: bold;
+}
+
+.hello h1 {
+    font-size: clamp(1rem, 4vw ,1.5rem);
+}
+
+.buttons {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.buttons button {
+    background-color: var(--blue);
+    color: #FFFFFF;
+    font-weight: bold;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    width: clamp(4rem, 10vw,6rem);
+    border: none;
+    border-radius: 15px;
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 main {
@@ -110,3 +180,4 @@ main {
     grid-row: 2 / 3;
     background-color: var(--grey);
 }
+
